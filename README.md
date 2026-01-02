@@ -122,8 +122,7 @@ FROM (
 GROUP BY genre
 ORDER BY total DESC;
 ```
-### 10. Find each year and the average numbers of content release by India on netflix. 
-### return top 5 year with highest avg content release !
+### 10. Find each year and the average numbers of content release by India on netflix. Return top 5 year with highest avg content release !
 
 ```sql
 SELECT 
@@ -180,12 +179,11 @@ ORDER BY 2 DESC
 LIMIT 10;
 ```
 
-/*
-Question 15:
+### Question 15:
 Categorize the content based on the presence of the keywords 'kill' and 'violence' in 
 the description field. Label content containing these keywords as 'Bad' and all other 
 content as 'Good'. Count how many items fall into each category.
-*/
+
 
 ```sql
 SELECT 
