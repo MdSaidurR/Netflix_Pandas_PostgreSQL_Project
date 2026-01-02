@@ -3,7 +3,7 @@
 Overview
 This demo project involves a comprehensive analysis of Netflix movies and TV shows using Pandas and PostgreSQL. The goal is to extract valuable insights and answer key business questions based on the dataset. Pandas is used to prepare and clean the dataset, and then the cleaned data is loaded into PostgreSQL for further analysis.
 
-Objectives
+##Objectives
 
 •	Analyze the distribution of content types (Movies vs. TV Shows).
 •	Identify the most frequently assigned ratings across different content categories.
@@ -13,11 +13,13 @@ Objectives
 Business Problems and Solutions
 
 --1. Count the number of Movies vs TV Shows
+...sql
 SELECT 
     type_of_show,
     COUNT(type_of_show) AS Number
 FROM movie_show
 GROUP BY type_of_show;
+...
 
 --2. Find the most common rating for movies and TV shows
 
