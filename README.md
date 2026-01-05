@@ -39,18 +39,13 @@ This demo project involves a comprehensive analysis of Netflix movies and TV sho
 1. **Connect to PostgreSQL** using SQLAlchemy:
    ```python
 from sqlalchemy import create_engine
-
-# Replace with your PostgreSQL credentials
 username = "postgres"
 password = "******"
 host = "localhost"
 port = "5432"
 database = "netflix_db"
-
-# Create connection engine
 engine = create_engine(f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}")
-# Step 2: Load DataFrame into PostgreSQL
-table_name = "movie_show"         # choose any table name
+table_name = "movie_show"         
 ```
 ## Business Problems and Solutions
 
