@@ -35,18 +35,8 @@ This demo project involves a comprehensive analysis of Netflix movies and TV sho
 **Result:** A clean, consistent, and analysis-ready dataset ready for further exploration and visualization.
 
 ## Load Data into PostgreSQL
+I cleaned and prepared the Netflix dataset using Pandas by handling missing values, renaming columns, and ensuring consistency. After the data was ready, I loaded it into PostgreSQL using SQLAlchemy, creating a movie_show table for easy and efficient analysis. The dataset is now clean, structured, and ready for insights.
 
-1. **Connect to PostgreSQL** using SQLAlchemy:
-   ```python
-from sqlalchemy import create_engine
-username = "postgres"
-password = "******"
-host = "localhost"
-port = "5432"
-database = "netflix_db"
-engine = create_engine(f"postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}")
-table_name = "movie_show"         
-```
 ## Business Problems and Solutions
 
 ### 1. Count the number of Movies vs TV Shows
