@@ -10,6 +10,30 @@ This demo project involves a comprehensive analysis of Netflix movies and TV sho
 - Examine content trends by release year, country, and duration.
 - Explore and categorize content using specific criteria, filters, and keywords to uncover deeper insights.
 
+##  Data Cleaning & Preparation (Pandas)
+
+- Loaded and explored the dataset using:
+  - `df.head()`
+  - `df.info()`
+  - `df.isnull().sum()`
+
+- Replaced missing values:
+  - `director` → `"Unknown"`
+  - `cast` → `"Not Listed"`
+  - `country` → `"Unknown"`
+
+- Removed rows with missing `date_added` to maintain accurate time-based analysis.
+
+- Filled missing values in:
+  - `rating` using the mode (most frequent value)
+  - `duration` with `"Not Mention"`
+
+- Renamed columns for clarity:
+  - `"cast"` → `"casts"`
+  - `"type"` → `"type_of_show"`
+
+**Result:** A clean, consistent, and analysis-ready dataset ready for further exploration and visualization.
+
 ## Business Problems and Solutions
 
 ### 1. Count the number of Movies vs TV Shows
